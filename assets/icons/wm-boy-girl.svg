@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 240" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g stroke-width="3.2">
+    <path stroke="#2D5C8B" d="M58 22c-16 0-27 14-27 31s11 32 27 41c16-9 27-24 27-41S74 22 58 22Zm0 72c3 21 15 35 23 45"/>
+    <path stroke="#B84878" d="M203 22c-16 0-27 14-27 31s11 32 27 41c16-9 27-24 27-41s-11-31-27-31Zm0 72c-3 21-15 35-23 45"/>
+    <path stroke="#C09534" d="m127 22 4 10 10 4-10 4-4 10-4-10-10-4 10-4 4-10ZM39 159l10-4m159 0 10 4m-99 47h22"/>
+  </g>
+  <text x="32" y="184" fill="#2D5C8B" font-family="Georgia,serif" font-size="47" letter-spacing="1">BOY</text>
+  <text x="145" y="184" fill="#B84878" font-family="Georgia,serif" font-size="47" letter-spacing="1">GIRL</text>
+  <path d="M45 198h66m36 0h72" stroke="#C09534" stroke-width="2.5"/>
+</svg>

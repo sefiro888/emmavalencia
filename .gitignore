@@ -1,0 +1,15 @@
+# Fuentes y pruebas locales que no necesita la web publicada.
+assets/images/social-hd/
+assets/images/Captura de pantalla*.png
+assets/images/hero-decoemma.png
+assets/images/color-celebracion.png
+assets/images/baby-inspiracion.png
+assets/images/card-*.png
+assets/images/logo.png
+conceptos-decorativos.html
+
+# Archivos de desarrollo locales.
+.DS_Store
+Thumbs.db
+node_modules/
+*.log
