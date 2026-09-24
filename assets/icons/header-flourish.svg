@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 150" fill="none">
+  <defs><linearGradient id="line" x1="63" y1="130" x2="303" y2="8" gradientUnits="userSpaceOnUse"><stop stop-color="#c39148"/><stop offset=".55" stop-color="#e3c281"/><stop offset="1" stop-color="#f7dfab"/></linearGradient></defs>
+  <g stroke="url(#line)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 137c68-37 83-46 115-79 28-29 46-41 70-42 31-2 43 24 29 41-10 12-30 9-32-4-2-10 12-16 19-8" stroke-width="3"/>
+    <path d="M85 91C65 64 71 46 88 41c15-4 24 8 17 18-4 6-13 4-14-1M121 60c-5-30 5-45 19-42 11 2 13 15 5 19M172 24c25-5 42-12 58-24M198 25c13 22 31 26 49 12M67 106c-4 20 8 29 25 22 10-4 10-16 1-19" stroke-width="2"/>
+    <path d="M139 48c6 15 19 20 32 17M163 32c6-11 17-16 29-16M44 117c4-14 14-21 26-22" stroke-width="1.6"/>
+  </g>
+  <g fill="#e1bf7d" opacity=".9">
+    <path d="M146 50c18-17 30-16 35-5-14 7-25 9-35 5ZM174 62c11-3 20 0 23 11-11 1-19-2-23-11ZM94 88c-14-10-14-20-5-25 8 10 9 18 5 25ZM62 111c-9 0-15-6-14-15 10 3 14 8 14 15ZM222 36c6-14 15-18 24-13-6 10-14 15-24 13Z"/>
+    <path d="m271 33 2.8 8 8 2.8-8 2.8-2.8 8-2.8-8-8-2.8 8-2.8zM41 34l2 5.5 5.5 2-5.5 2-2 5.5-2-5.5-5.5-2 5.5-2z"/>
+    <circle cx="255" cy="85" r="2.5"/><circle cx="288" cy="92" r="1.7"/><circle cx="15" cy="68" r="1.8"/><circle cx="119" cy="15" r="2.1"/>
+  </g>
+</svg>

@@ -759,3 +759,54 @@ body[data-page="revelacion"] .page-hero-grid > div:first-child::after { width:14
   .process-copy h2 { font-size:clamp(2.7rem,10vw,3.7rem); }
   .home-page .cta-band { border-radius:16px; }
 }
+
+/* Cabecera de celebración: rosa empolvado, luz dorada y ornamentos dibujados para la marca. */
+body { overflow-x:clip; }
+.site-header,.home-page .site-header {
+  isolation:isolate;
+  background:linear-gradient(105deg,#ffe7ef 0%,#ffecf3 52%,#fff0ed 100%);
+  border-bottom:2px solid #eac79b;
+  box-shadow:0 7px 23px rgba(99,54,77,.1);
+}
+.site-header::before,.site-header::after { content:""; position:absolute; z-index:0; pointer-events:none; background-repeat:no-repeat; background-size:contain; }
+.site-header::before { left:calc(50% - 405px); bottom:-20px; width:118px; height:116px; background-image:url('../icons/header-balloons.svg'); filter:drop-shadow(0 4px 6px rgba(101,58,75,.11)); }
+.site-header::after { right:0; top:0; width:225px; height:130px; background-image:url('../icons/header-flourish.svg'); opacity:.8; }
+.site-header .nav,.home-page .site-header .nav { position:relative; z-index:1; min-height:104px; }
+.site-header .brand-name,.home-page .site-header .brand-name { color:#624159; }
+.site-header .brand-name span,.home-page .site-header .brand-name span { color:#a97850; }
+.site-header .nav-links,.home-page .site-header .nav-links { gap:24px; color:#80624c; font-family:Fraunces,Georgia,serif; font-size:1.16rem; font-weight:500; letter-spacing:-.025em; }
+.site-header .nav-links > a,.site-header .nav-category > button { color:inherit; font-weight:500; transition:color .2s ease,transform .2s ease; }
+.site-header .nav-links > a:hover,.site-header .nav-category > button:hover { color:#af2f61; transform:translateY(-2px); }
+.site-header .nav-links > a[aria-current="page"],.home-page .site-header .nav-links > a[aria-current="page"] { color:#a62f61; }
+.site-header .nav-links > a[aria-current="page"]::after,.home-page .site-header .nav-links > a[aria-current="page"]::after { content:""; position:absolute; left:0; right:0; bottom:-8px; height:2px; border-radius:4px; background:#d6ab68; }
+.site-header .nav-category > button span { color:#b48155; font-size:.95rem; }
+.site-header .category-menu { border:1px solid #e9bed0; border-radius:13px; background:#fff9f7; box-shadow:0 15px 34px rgba(95,50,71,.14); }
+.site-header .category-menu a { font-family:"DM Sans",sans-serif; font-size:.84rem; font-weight:700; letter-spacing:0; }
+.site-header .category-menu a:hover { background:#ffecf2; }
+.site-header .nav-instagram { color:#8d5366; }
+.site-header .nav-ctas .btn-pink { border-radius:100px; background:#a93468; box-shadow:0 4px 0 #e8b5c8; }
+.site-header .nav-ctas .btn-pink:hover { background:#912555; box-shadow:0 2px 0 #e8b5c8; }
+.site-header .menu-toggle { border-color:#dfabc0; border-radius:50%; background:#fff7f9; color:#9f3061; }
+@media (max-width:1150px) {
+  .site-header::before { display:none; }
+  .site-header::after { width:175px; right:-35px; opacity:.42; }
+  .site-header .nav-links,.home-page .site-header .nav-links { gap:15px; font-size:1rem; }
+}
+@media (min-width:681px) and (max-width:900px) {
+  .site-header .nav,.home-page .site-header .nav { min-height:86px; }
+  .site-header .brand { min-width:0; }
+  .site-header .brand-name { display:none; }
+  .site-header .nav-links,.home-page .site-header .nav-links { gap:12px; font-size:.95rem; }
+}
+@media (max-width:680px) {
+  .site-header,.home-page .site-header { border-bottom-color:#e9c09a; }
+  .site-header::before { display:none; }
+  .site-header::after { top:-10px; right:-30px; width:110px; height:75px; opacity:.38; }
+  .site-header .nav,.home-page .site-header .nav { min-height:70px; }
+  .site-header .nav-links,.home-page .site-header .nav-links { top:70px; font-family:"DM Sans",sans-serif; font-size:.91rem; font-weight:800; letter-spacing:0; background:#fff5f7; border:1px solid #e7c1cf; }
+  .site-header .nav-links > a,.site-header .nav-category > button { font-weight:800; }
+  .site-header .nav-links > a[aria-current="page"]::after { display:none; }
+  .site-header .category-menu,.home-page .site-header .category-menu { border:0; background:transparent; box-shadow:none; }
+  .site-header .category-menu a { background:#fffaf8; border-radius:9px; border-color:#ead4dc; }
+  .site-header .nav-ctas .btn-pink { box-shadow:0 3px 0 #e8b5c8; }
+}
