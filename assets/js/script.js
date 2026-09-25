@@ -21,25 +21,15 @@ document.querySelectorAll('.category-menu a').forEach(link => {
 document.querySelectorAll('.nav-links a').forEach(link => { if (/galer[ií]a|inspiraci[oó]n/i.test(link.textContent)) { link.href='galeria.html'; link.textContent='Galería'; } });
 const toggle = document.querySelector('.menu-toggle');
 const links = document.querySelector('.nav-links');
-const eventsMenu = links?.querySelector('.nav-category');
-const eventButton = eventsMenu?.querySelector('button');
-function closeNavigation() {
-  links?.classList.remove('open');
-  toggle?.setAttribute('aria-expanded','false');
-  toggle?.setAttribute('aria-label','Abrir menú');
-  eventsMenu?.classList.remove('open');
-  eventButton?.setAttribute('aria-expanded','false');
-}
 if (toggle && links) toggle.addEventListener('click', () => {
   const open = links.classList.toggle('open');
   toggle.setAttribute('aria-expanded', String(open));
-  toggle.setAttribute('aria-label',open ? 'Cerrar menú' : 'Abrir menú');
-  if (eventsMenu && eventButton) { eventsMenu.classList.toggle('open',open); eventButton.setAttribute('aria-expanded',String(open)); }
+  const events = links.querySelector('.nav-category');
+  const eventButton = events?.querySelector('button');
+  if (events && eventButton) { events.classList.toggle('open',open); eventButton.setAttribute('aria-expanded',String(open)); }
 });
-document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click',closeNavigation));
+document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => links?.classList.remove('open')));
 document.querySelectorAll('.nav-category button').forEach(button => button.addEventListener('click', () => { const wrap=button.parentElement; const open=wrap.classList.toggle('open'); button.setAttribute('aria-expanded', String(open)); }));
-document.addEventListener('click', event => { if (!event.target.closest('.site-header')) closeNavigation(); });
-document.addEventListener('keydown', event => { if (event.key === 'Escape') { const menuWasOpen=links?.classList.contains('open'); const eventsWereOpen=eventsMenu?.classList.contains('open'); closeNavigation(); if (menuWasOpen) toggle?.focus(); else if (eventsWereOpen) eventButton?.focus(); } });
 const slides = [...document.querySelectorAll('.hero-slide')];
 const dots = [...document.querySelectorAll('.hero-dots button')];
 let currentSlide = 0;
